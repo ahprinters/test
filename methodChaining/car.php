@@ -1,4 +1,33 @@
 <?php
+
+class Car {
+    public $brand;
+    public $model;
+    public $engine;
+
+    public function __construct($brand, $model, $engine) {
+        $this->brand = $brand;
+        $this->model = $model;
+        $this->engine = $engine;
+    }
+
+    public function setBrand($brand) {
+        $this->brand = $brand;
+        return $this;
+    }
+
+    public function setModel($model) {
+        $this->model = $model;
+        return $this;
+    }
+
+    public function setEngine($engine) {
+        $this->engine = $engine;
+        return $this;
+    }
+}
+
+
 class Engine {
     public $type;
 
@@ -53,8 +82,5 @@ $car->displayCarInfo();
 // Displaying engine type and car model
 echo "Engine Type: " . $car->engine->type . "\n";
 echo "Car Model: " . $car->model . "\n";
-
-
-
 
 ?>
