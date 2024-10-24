@@ -28,6 +28,12 @@ class Car {
         // Call the displayDetails() method of the Engine class
         return "Brand: " . $this->brand . ", Model: " . $this->model;
     }
+
+    // Method to display engine details
+    public function displayEngineDetails()
+    {
+        return $this->engine->displayDetails();
+    }
 }
 
 // Instantiate the Engine class and set its properties
