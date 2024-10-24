@@ -2,6 +2,7 @@
 class Engine {
     public $type;
 
+    // Constructor
     public function __construct($type) {
         $this->type = $type;
     }
