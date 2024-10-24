@@ -9,5 +9,9 @@ class Engine
    {
        $this->type = $type;
    }    
-
+   public function settype($type)
+   {
+       $this->type = $type;
+       return $this;
+   }
 }

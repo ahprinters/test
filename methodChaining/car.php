@@ -37,7 +37,10 @@ class Car {
     }
 
 }
-
-$car = new Car("Ford", "Mustang", new Engine("V8", 500, 2.0));
-$car->setBrand("Chevrolet")->setModel("Camaro")->engine->settype("V8")->displayCarInfo;
+$engine = new Engine("V8", 500, 2.0);
+$car = new Car("Ford", "Mustang", $engine);
+echo "Engine Type: " . $car->engine->type . "\n";   
+echo "Car Model: " . $car->brand . " " . $car->model . "\n";
+// $car = new Car("Ford", "Mustang", new Engine("V8", 500, 2.0));
+// $car->setBrand("Chevrolet")->setModel("Camaro")->engine->settype("V8")->displayCarInfo;
 ?>
