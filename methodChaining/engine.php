@@ -14,4 +14,8 @@ class Engine
        $this->power = $power;
        $this->volume = $volume;     
    }
+   public function displayDetails()
+   {
+       return "Type: " . $this->type . ", Power: " . $this->power . ", Volume: " . $this->volume;
+   }
 }
