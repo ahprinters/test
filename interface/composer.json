@@ -1,0 +1,9 @@
+{
+    "autoload": {
+        "psr-4": {
+            "Payment\\": "path/to/interface",
+            "Refund\\": "path/to/interface",
+            "PaymentSystem\\": "path/to/interface"
+        }
+    }
+}
