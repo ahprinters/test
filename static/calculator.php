@@ -30,7 +30,7 @@ class Calculator {
 // $p1 = new Calculator();
 // $p1->testing();
 // echo Calculator::areaOfCircle(10);
-echo Calculator::describeCircle(4);
+echo Calculator::describeCircle(10);
 
 
 
