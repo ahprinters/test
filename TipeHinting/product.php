@@ -4,7 +4,7 @@ class Product
     private $name;
     
 
-    public function __construct($name, $price, $weight)
+    public function __construct($name)
         {
             $this->name = $name;
         
